@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            font-family: cursive;
+        }
+        body{
+            background-color: rgb(70, 70, 70);
+        }
+        /* 26.html
+        header{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        } */
+        .navbar{
+            font-size: small;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 25px;
+        }
+        .navbar ul :hover{
+            background-color: rgba(143, 138, 214, 0.726);
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+        .navbar li{
+            float: left;        /* If we use float, it will overflow from the parent */
+            list-style: none;
+            padding: 10px 10px ;
+            text-decoration: none;
+            }
+        .navbar li :hover{
+            background-color: rgb(51, 17, 105);
+            border-radius: 10px;
+        }
+        .navbar ul{
+            overflow: auto;     /* Used due to use of float in .navbar li */
+            margin: 50px 0px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a :hover{
+            background-color: purple;   /*Doubt- Ye apply kyu nhi hua?*/
+        }
+        .search{
+            float: right;
+            font-size: small;
+            padding: 5px 15px 5px 5px;
+            margin: 2px 3px;
+        }
+        .navbar input{
+            border-radius:10px ;
+            width: 150px;
+            text-align: center;
+        }
+        .navbar input:hover{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+        div.search:hover{
+            border-radius: 25px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>                <!-- <ul type="none"> bhi kr skte hain -->
+                <li><a href="https://www.youtube.com/">YOUTUBE</a> </li>
+                <li><a href="https://www.youtube.com/feed/subscriptions">Subscriptions</a> </li>
+                <li><a href="https://www.youtube.com/feed/explore">Explore</a></li>
+                <li><a href="https://www.youtube.com/feed/library">Library</a></li>
+                <div class="search">
+                   Search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="search" id="" placeholder="Tap to Search">
+                </div>
+            </ul>
+        </nav>
+
+        <nav class="navbar">
+            <ul>                <!-- <ul type="none"> bhi kr skte hain -->
+                <li><a href="https://www.instagram.com/">INSTAGRAM</a> </li>
+                <li><a href="https://www.instagram.com/direct/inbox/">DMs</a> </li>
+                <li><a href="https://www.instagram.com/explore/">Explore</a></li>
+                <div class="search">
+                    Search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="search" id="" placeholder="Tap to Search">
+                </div>
+            </ul>
+        </nav>
+        
+        <nav class="navbar">
+            <ul>                <!-- <ul type="none"> bhi kr skte hain -->
+                <li><a href="https://www.linkedin.com/feed/">LINKEDIN</a> </li>
+                <li><a href="https://www.linkedin.com/mynetwork/">My Network</a> </li>
+                <li><a href="https://www.linkedin.com/jobs/">Jobs</a></li>
+                <li><a href="https://www.linkedin.com/messaging/thread/new/">Messaging</a></li>
+                <li><a href="https://www.linkedin.com/notifications/">Notifications</a> </li>
+                <div class="search">
+                    Search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="search" id="" placeholder="Tap to Search">
+                </div>
+            </ul>
+        </nav>
+
+        <nav class="navbar">
+            <ul>                <!-- <ul type="none"> bhi kr skte hain -->
+                <li><a href="https://github.com/">GITHUB</a> </li>
+                <li><a href="https://github.com/pulls">Pulls</a> </li>
+                <li><a href="https://github.com/issues">Issues</a></li>
+                <li><a href="https://github.com/marketplace">Marketplace</a></li>
+                <li><a href="https://github.com/explore">Explore</a> </li>
+                <div class="search">
+                    Search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="search" id="" placeholder="Tap to Search">
+                </div>
+            </ul>
+        </nav>
+
+        <nav class="navbar">
+            <ul>                <!-- <ul type="none"> bhi kr skte hain -->
+                <li><a href="https://www.facebook.com/">FACEBOOK</a> </li>
+                <li><a href="https://www.facebook.com/watch">Watch</a> </li>
+                <li><a href="https://www.facebook.com/marketplace/?ref=app_tab">Marketplace</a></li>
+                <li><a href="https://www.facebook.com/groups/feed/">Groups</a></li>
+                <li><a href="https://www.facebook.com/games/instantgames/?store_visit_source=gaming_tab">Gaming</a> </li>
+                <div class="search">
+                    Search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="search" id="" placeholder="Tap to Search">
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+</html>
